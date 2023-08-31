@@ -20,6 +20,7 @@ html {
   padding-inline: 2rem;
   padding-block: 1rem;
   background-color: var(--primary-color);
+
 }
 
 .logo__container {}
@@ -27,6 +28,10 @@ html {
 .logo__img {
   height: 2.5rem;
   width: 8.5rem;
+}
+
+.option-nav-container {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -38,5 +43,9 @@ html {
   .logo__container {
     background-color: var(--primary-color);
     padding: 10px;
+  }
+
+  .option-nav-container {
+    display: block;
   }
 }
