@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #e60012;
+  --white: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +19,7 @@ html {
   align-items: center;
   padding-inline: 2rem;
   padding-block: 1rem;
-  background-color: #e60012;
+  background-color: var(--primary-color);
 }
 
 .logo__container {}
@@ -22,4 +27,16 @@ html {
 .logo__img {
   height: 2.5rem;
   width: 8.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    background-color: var(--white);
+    padding: 0;
+  }
+
+  .logo__container {
+    background-color: var(--primary-color);
+    padding: 10px;
+  }
 }
