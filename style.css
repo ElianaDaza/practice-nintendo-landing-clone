@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e60012;
   --white: white;
+  --tex1: #484848;
 }
 
 * {
@@ -15,15 +16,6 @@ html {
   font-size: 62.5%;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 2rem;
-  padding-block: 1rem;
-  background-color: var(--primary-color);
-
-}
 
 .logo__container {}
 
@@ -36,19 +28,52 @@ html {
   display: none;
 }
 
+
 .buttom-options__container {
   display: none;
+
+}
+
+.flag__img {
+  border: 0.1rem white solid;
+  border-radius: 0.5rem
+}
+
+.mobile-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+
+}
+
+.desktop-header-container {
+  display: none;
+
 }
 
 
 @media screen and (min-width: 1024px) {
-  .header-container {
-    display: flex;
-    background-color: var(--white);
-    padding: 0;
-    padding-right: 20px;
-    gap: 5px
+  .mobile-header-container {
+    display: none;
   }
+
+  .desktop-header-container {
+    display: flex;
+
+
+  }
+
+  .search-options-container {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 1.5rem;
+    padding-inline-start: 2rem;
+
+  }
+
 
   .logo__container {
     background-color: var(--primary-color);
@@ -57,34 +82,45 @@ html {
 
   .option-nav-container {
     display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding-inline: 10px;
-    gap: 50px;
+    justify-content: space-between;
+    color: var(--tex1);
+    font-weight: normal;
+    font-weight: bold;
+    width: 100%;
+
+
 
   }
 
   .search-categorie__container {
     display: flex;
-    justify-content: space-between;
-    padding-inline: 5px;
-    width: 30vw;
-
-
 
   }
 
   .buttom-options__container {
     display: flex;
-    gap: 25px;
-
-
+    align-items: center;
+    gap: 30px;
+    padding-block: 10px;
+    padding-inline-end: 2rem;
   }
 
   .search-container {
     color: gray;
-
   }
 
+  .hr-search-categories {
+    color: black;
+  }
 
+  .search-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+    padding-block-end: 1rem;
+  }
+
+  .flag-container-mobile {
+    display: none;
+  }
 }
