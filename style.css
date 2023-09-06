@@ -54,6 +54,10 @@ html {
 
 }
 
+.second-nav-bar-container {
+  display: none;
+}
+
 
 @media screen and (min-width: 1024px) {
   .mobile-header-container {
@@ -87,14 +91,10 @@ html {
     font-weight: normal;
     font-weight: bold;
     width: 100%;
-
-
-
   }
 
   .search-categorie__container {
     display: flex;
-
   }
 
   .buttom-options__container {
@@ -109,18 +109,35 @@ html {
     color: gray;
   }
 
-  .hr-search-categories {
-    color: black;
-  }
-
   .search-options {
     display: flex;
     justify-content: space-between;
     gap: 20rem;
-    padding-block-end: 1rem;
+    padding-block-end: 0.5rem;
   }
 
   .flag-container-mobile {
     display: none;
   }
+
+  .second-nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .buttom-container-secodn-bar {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.5rem;
+    color: var(--tex1);
+    font-weight: bold;
+  }
+
+  .a:hover {
+    color: var(--primary-color)
+  }
+
 }
