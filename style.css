@@ -2,6 +2,7 @@
   --primary-color: #e60012;
   --white: white;
   --tex1: #484848;
+
 }
 
 * {
@@ -17,8 +18,6 @@ html {
 }
 
 
-.logo__container {}
-
 .logo__img {
   height: 2.5rem;
   width: 8.5rem;
@@ -31,7 +30,6 @@ html {
 
 .buttom-options__container {
   display: none;
-
 }
 
 .flag__img {
@@ -46,17 +44,20 @@ html {
   background-color: var(--primary-color);
   padding-inline: 1rem;
   padding-block: 1rem;
-
 }
 
 .desktop-header-container {
   display: none;
-
 }
 
 .second-nav-bar-container {
   display: none;
 }
+
+.banner-principal-container {
+  display: flex;
+}
+
 
 
 @media screen and (min-width: 1024px) {
@@ -66,8 +67,6 @@ html {
 
   .desktop-header-container {
     display: flex;
-
-
   }
 
   .search-options-container {
@@ -75,9 +74,7 @@ html {
     flex-direction: column;
     padding-block-start: 1.5rem;
     padding-inline-start: 2rem;
-
   }
-
 
   .logo__container {
     background-color: var(--primary-color);
@@ -124,7 +121,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .buttom-container-secodn-bar {
@@ -140,4 +136,77 @@ html {
     color: var(--primary-color)
   }
 
+  .banner-principal-container {
+    display: flex;
+
+  }
+
+
+  .backgroun-img-banner-container {
+    display: grid;
+  }
+
+  .background-banner-principal {
+    display: flex;
+    width: 100%;
+  }
+
+  .img-banner-principal {
+    display: flex;
+    position: relative;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    margin-top: -440px;
+  }
+
+  .background-banner-principal {
+    width: 100%;
+    height: 70vh;
+    background-image: url(./assets/imgs/fondo-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-buttom-ratings-banner-principal-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    justify-items: start;
+    padding: 24px 0 48px;
+
+  }
+
+  .text-banner-principal {
+    width: 70rem;
+    font-size: 2.8rem;
+    color: var(--tex1);
+    padding-inline-start: 2rem;
+
+  }
+
+
+  .buttom-banner-principal {
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    height: 5rem;
+    width: 15rem;
+    justify-content: center;
+  }
+
+  .ratings-banner-principal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--tex1);
+    font-size: 12px;
+  }
+
+  .text-description-container {
+    display: block;
+    align-content: center;
+    padding-inline-end: 3rem;
+
+  }
 }
