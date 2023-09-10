@@ -139,9 +139,7 @@ html {
   .search-options {
     display: flex;
     padding-block-end: 0.5rem;
-
     border-block-end: solid var(--tex1) 1px;
-
   }
 
   .search-options:hover {
@@ -159,93 +157,115 @@ html {
     font-family: var(--font-family);
     font-size: 1.5rem;
   }
-}
-
-.buttom-container-secodn-bar {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem;
-  color: var(--tex1);
-  font-weight: bold;
-}
-
-.hover:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-}
 
 
-.background-banner-principal {
-  width: 100%;
-}
+  .buttom-container-secodn-bar {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.5rem;
+    color: var(--tex1);
+    font-weight: bold;
+  }
 
-.img-banner-principal {
-  position: relative;
-  padding-block: 3rem;
-  padding-inline: 3rem;
-
-
-}
-
-.img-2 {
-  border-radius: 0.5rem;
-}
-
-.background-banner-principal {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 35rem;
-  background-image: url(./assets/imgs/fondo-banner.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.text-buttom-ratings-banner-principal-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 2rem;
-  justify-items: start;
-  padding: 24px 0 48px;
-  font-family: var(--font-family);
-
-}
-
-.text-banner-principal {
-  width: 70rem;
-  color: var(--tex1);
-  padding-inline-start: 2rem;
-
-}
-
-.h2 {
-  font-size: 2rem;
-}
+  .hover:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
 
 
-.buttom-banner-principal {
-  border-radius: 0.5rem;
-  background-color: var(--primary-color);
-  color: var(--white);
-  height: 5rem;
-  width: 15rem;
-  justify-content: center;
-}
+  .background-banner-principal {
+    width: 100%;
+  }
 
-.ratings-banner-principal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  color: var(--tex1);
-
-}
-
-.text-description-container {
-  display: block;
-  align-content: center;
-  padding-inline-end: 3rem;
+  .img-banner-principal {
+    position: relative;
+    padding-top: 3rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
 
 
+  }
+
+  .img-2 {
+    border-radius: 0.5rem;
+  }
+
+  .background-banner-principal {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 35rem;
+    background-image: url(./assets/imgs/fondo-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-buttom-ratings-banner-principal-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    gap: 2rem;
+    padding: 2rem 0rem 4rem;
+    align-items: center;
+    border-block-end: var(--tex1) solid 0.1px;
+  }
+
+  .text-banner-principal {
+
+    color: var(--tex1);
+    padding-inline-start: 2rem;
+    font-size: 18px;
+
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+
+  .buttom-banner-principal {
+    border-radius: 0.5rem;
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--white);
+    height: 5rem;
+    width: 18rem;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s
+  }
+
+  .buttom-banner-principal:hover {
+    background-color: 172, 0, 13;
+    border-color: 172, 0, 13;
+    cursor: pointer;
+  }
+
+  .text-buttom {
+    border-style: solid var(--primary-color) 5px;
+    align-content: center;
+    font-size: 2rem;
+
+  }
+
+  .ratings-banner-principal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--tex1);
+
+  }
+
+  .text-description-container {
+    display: block;
+    align-content: center;
+    padding-inline-end: 3rem;
+    font-size: 12px;
+  }
+
+  .description-1-banner-principal {
+    padding: 4px 0px;
+  }
 }
