@@ -81,6 +81,7 @@ html {
   align-items: center;
   border-block-end: var(--tex1) solid 0.1px;
   position: relative;
+  padding-block-end: 2rem;
 }
 
 .text-banner-principal {
@@ -148,6 +149,7 @@ html {
   flex-direction: column;
   gap: 2rem;
   padding-block-start: 2rem;
+
 }
 
 
@@ -162,6 +164,15 @@ html {
   height: 10rem;
 }
 
+.ratings-banner-principal-container {
+  display: none;
+}
+
+@media (min-width: 625px) {
+  .ratings-banner-principal-container {
+    display: flex;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .mobile-header-container {
