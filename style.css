@@ -173,6 +173,14 @@ html {
     cursor: pointer;
   }
 
+  .banner-principal-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .backgroun-img-banner-container {
+    display: flex;
+  }
 
   .background-banner-principal {
     width: 100%;
