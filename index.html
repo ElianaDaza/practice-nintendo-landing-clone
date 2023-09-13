@@ -106,10 +106,11 @@
       <div class="backgroun-img-banner-container">
         <div class="background-banner-principal">
         </div>
-        <div class="img-banner-principal">
-          <img src="./assets/imgs/banner-principal-desktop.webp" alt="imagen-principal" width="100%" height="80%"
+        <picture class="img-banner-principal">
+          <source media="(width >= 1024px)" srcset="./assets/imgs/banner-principal-desktop.webp">
+          <img src="./assets/imgs/banner-principal-mobile.webp" alt="imagen-principal" width="100%" height="80%"
             class="img-2">
-        </div>
+        </picture>
       </div>
 
       <div class="text-buttom-ratings-banner-principal-container">
