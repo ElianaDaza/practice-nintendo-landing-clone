@@ -85,15 +85,9 @@ html {
 }
 
 .text-banner-principal {
-
   color: var(--white);
   padding-inline-start: 2rem;
-  font-size: 18px;
-
-}
-
-.h2 {
-  font-size: 2rem;
+  font-size: 14px;
 }
 
 
@@ -103,10 +97,11 @@ html {
   background-color: var(--primary-color);
   color: var(--white);
   height: 5rem;
-  width: 18rem;
+  width: calc(100% - 2px);
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s
+
+
 }
 
 .buttom-banner-principal:hover {
@@ -149,6 +144,7 @@ html {
   flex-direction: column;
   gap: 2rem;
   padding-block-start: 2rem;
+  text-align: center;
 
 }
 
@@ -157,11 +153,12 @@ html {
   position: absolute;
   z-index: -1;
   width: 100%;
+
 }
 
-.img-fondo {
+.img-fondo-banner {
   width: 100%;
-  height: 10rem;
+  height: 13rem;
 }
 
 .ratings-banner-principal-container {
@@ -172,9 +169,44 @@ html {
   .ratings-banner-principal-container {
     display: flex;
   }
+
+  .background-banner-description {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .img-fondo-banner {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .text-banner-principal {
+    font-size: 1.75rem;
+  }
+
+  .text-buttom-banner-principal {
+    font-size: 1.125rem;
+  }
+
+  .buttom-banner-principal {
+
+    width: 120%;
+
+
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .buttom-banner-principal {
+
+    width: 160%;
+
+  }
+
+}
+
+@media screen and (min-width: 1026px) {
   .mobile-header-container {
     display: none;
   }
@@ -329,7 +361,13 @@ html {
   .text-buttom-banner-principal {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     padding-block-start: 0;
+  }
+
+  .buttom-banner-principal {
+    border-radius: 0.8rem;
+    height: 4.5rem;
+    width: 18rem;
   }
 }
