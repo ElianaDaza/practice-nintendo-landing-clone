@@ -94,20 +94,24 @@ html {
 .buttom-banner-principal {
   border-radius: 0.5rem;
   display: flex;
-  background-color: var(--primary-color);
+  background-color: rgb(230, 0, 18);
+  border-style: solid rgb(230, 0, 18);
+  transform: none;
   color: var(--white);
   height: 5rem;
   width: calc(100% - 2px);
   align-items: center;
   justify-content: center;
+  transition: transform 350ms;
 
 
 }
 
 .buttom-banner-principal:hover {
-  background-color: 172, 0, 13;
-  border-color: 172, 0, 13;
   cursor: pointer;
+  background-color: rgb(172, 0, 13);
+  border-color: rgb(172, 0, 13);
+  transform: scale(1.05, 1.05, 0);
 }
 
 .text-buttom {
@@ -165,6 +169,80 @@ html {
   display: none;
 }
 
+.featured-container-main {
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+
+}
+
+.tittle__featured {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--tex1);
+  padding-block-end: 2rem;
+}
+
+.img-esrb-featured {
+  display: block;
+  padding: 5rem;
+
+}
+
+.img-featured-principal {
+  display: block;
+  min-height: 1px;
+  padding: 2rem;
+
+
+}
+
+.img-2 {
+  border-radius: 1rem;
+}
+
+
+.text-featured {
+  font-family: var(--font-family);
+  color: var(--tex1);
+  text-align: center;
+  font-size: 12px;
+}
+
+.rating__featured__container {
+  display: none;
+}
+
+.text-buttom-featured-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  gap: 1rem;
+  align-items: center;
+  border-block-end: var(--tex1) solid 0.1px;
+  position: relative;
+  padding-block-end: 2rem;
+  padding: 2rem;
+
+}
+
+.buttom__featured {
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: rgb(230, 0, 18);
+  border-style: solid;
+  transform: none;
+  color: var(--white);
+  height: 5rem;
+  width: calc(100% - 2px);
+  align-items: center;
+  justify-content: center;
+  transition: transform 350ms;
+  font-size: 2rem;
+}
+
+
 @media (min-width: 625px) {
   .ratings-banner-principal-container {
     display: flex;
@@ -192,14 +270,15 @@ html {
   .buttom-banner-principal {
 
     width: 120%;
+  }
 
-
+  .rating__featured__container {
+    display: flex;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .buttom-banner-principal {
-
     width: 160%;
 
   }
