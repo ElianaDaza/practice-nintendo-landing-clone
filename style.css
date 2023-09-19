@@ -185,7 +185,7 @@ html {
 
 .img-esrb-featured {
   display: block;
-  padding: 5rem;
+
 
 }
 
@@ -220,10 +220,9 @@ html {
   font-family: var(--font-family);
   gap: 1rem;
   align-items: center;
-  border-block-end: var(--tex1) solid 0.1px;
   position: relative;
-  padding-block-end: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
 
 }
 
@@ -242,6 +241,151 @@ html {
   font-size: 2rem;
 }
 
+.posts-featured-container {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-inline-start: 2rem;
+
+
+}
+
+.post-1-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 210px;
+  position: relative;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: rgb(218, 218, 218);
+  border-image: initial;
+  border-top-style: initial;
+  border-top-color: initial;
+  background-color: rgb(255, 255, 255);
+}
+
+.post-2-featured {
+  border-radius: 0.75rem;
+  position: relative;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-bottom-color: rgb(218, 218, 218);
+  border-left-color: rgb(218, 218, 218);
+
+}
+
+
+.tittle-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  margin-top: 8rem;
+  width: 210px;
+  padding-top: 2rem;
+  border-width: 0px 1px 1px;
+  padding-inline: 1rem;
+}
+
+.tittle-text-2-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  margin-top: 10rem;
+  width: 210px;
+  padding-top: 2rem;
+  border-width: 0px 1px 1px;
+  padding-inline: 1rem;
+}
+
+
+.post-2-featured {
+  display: flex;
+  flex-direction: column;
+
+  width: 210px;
+
+}
+
+.post-3-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.post-4-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.tittle-featured {
+  font-size: 1.4rem;
+  font-family: var(--font-family);
+  color: var(--tex1);
+  margin-bottom: 1rem;
+
+}
+
+.img-pikachu {
+  position: absolute;
+  width: 210px;
+  height: 110px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.img-mario-kart-deluxe {
+  position: absolute;
+  width: 200px;
+  height: 110px;
+
+  border-top: 1rem;
+  border-image: initial;
+  border-top-style: initial;
+  border-top-color: initial;
+
+}
+
+
+.img-warioware {
+  width: 210px;
+  height: 110px;
+}
+
+.img-smrpg {
+  width: 210px;
+  height: 110px;
+}
+
+.text-post-1-featured {
+
+  color: var(--tex1);
+  font-size: var(--font-family);
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+
+
+
+
+.post-3-4-featured {
+  display: none;
+}
 
 @media (min-width: 625px) {
   .ratings-banner-principal-container {
@@ -273,6 +417,22 @@ html {
   }
 
   .rating__featured__container {
+    display: flex;
+  }
+
+  .rating__featured__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--tex1);
+  }
+
+  .text-featured {
+    font-size: 1.4rem;
+  }
+
+  .post-3-4-featured {
     display: flex;
   }
 }
