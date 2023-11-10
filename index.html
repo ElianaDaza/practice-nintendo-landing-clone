@@ -265,7 +265,11 @@
         <h2 class="store__text-title">My Nintendo Store</h2>
       </div>
       <div class="store__img-container">
-        <img class="store__img" src="./assets/imgs/4576x704_HGG-banner-desktop.jpeg" alt="Imagen promocional">
+        <picture class="store__img-mobile">
+          <source media="(width <= 768px)" srcset="./assets/imgs/img-onlie-store-tablet.jpeg">
+          <img src="./assets/imgs/4576x704_HGG-banner-desktop.jpeg" alt="imagen store" width="100%" height="100%"
+            class="store__img-desktop">
+        </picture>
       </div>
       <div class="store__subtitle-button">
         <div class="store__subtitle">
