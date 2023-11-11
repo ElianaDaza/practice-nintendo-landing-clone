@@ -193,22 +193,17 @@ html {
 
 .img-esrb-featured {
   display: block;
-
-
 }
 
 .img-featured-principal {
   display: block;
   min-height: 1px;
   padding: 2rem;
-
-
 }
 
 .img-2 {
   border-radius: 1rem;
 }
-
 
 .text-featured {
   font-family: var(--font-family);
@@ -517,25 +512,29 @@ html {
 }
 
 /*DESPUES DEL CURSO*/
+/*ESTILOS DEL ONLINE STORE Y GAMING SYSTEMS*/
 
 .header-container-main {
   position: relative;
 }
 
-.store__container {
+.store__container,
+.gaming__container {
   position: relative;
   width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  padding-inline: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  padding-inline: 10rem;
   border-top: 1px solid var(--color-borde-separator-edge);
 }
 
-.store__title {
+.store__title,
+.gaming__title {
   width: 100%;
 }
 
-.store__text-title {
+.store__text-title,
+.gaming__title-text {
   font-size: 2.8rem;
   font-family: var(--font-family);
   font-weight: 700;
@@ -544,21 +543,26 @@ html {
   color: var(--tex1);
 }
 
-.store__img-desktop {
+.store__img-desktop,
+.gaming__img-desktop {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
   cursor: pointer;
 }
 
-.store__subtitle-button {
+.store__subtitle-button,
+.gaming__subtitle-button {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 5rem;
   margin-top: 2rem;
 }
 
-.store__subtitle {
+.store__subtitle,
+.gaming__subtitle {
   font-size: 2.1rem;
   font-family: var(--font-family);
   margin-block: 3rem;
@@ -566,17 +570,19 @@ html {
   color: var(--tex1);
 }
 
-.store__button-container {
+.store__button-container,
+.gaming__button-container {
   display: flex;
   justify-content: center;
   height: 4.5rem;
   text-decoration: none;
 }
 
-.store_button-styles {
+.store_button-styles,
+.gaming_button-styles {
   position: absolute;
   display: flex;
-  width: 17%;
+  width: 15%;
   height: 4.5rem;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -584,13 +590,15 @@ html {
   transition: all 350ms;
 }
 
-.store_button-styles:hover {
+.store_button-styles:hover,
+.gaming_button-styles:hover {
   background-color: rgb(172, 0, 13);
   border-color: rgb(172, 0, 13);
   transform: scaleX(1.05) scaleY(1.05);
 }
 
-.store__button-text {
+.store__button-text,
+.gaming__button-text {
   font-size: 1.8rem;
   font-family: var(--font-family);
   font-weight: 600;
@@ -636,8 +644,6 @@ html {
     padding-bottom: 3rem;
   }
 
-
-
   .rating__featured__container {
     display: flex;
     justify-content: center;
@@ -672,10 +678,21 @@ html {
 
 
 @media (max-width: 768px) {
-  .store__subtitle {
-    font-size: 1.8rem
+
+  .store__container,
+  .gaming__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-inline: 2rem;
   }
 }
+
+
+.store__subtitle,
+.gaming__subtitle {
+  font-size: 1.8rem
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -690,15 +707,24 @@ html {
     width: 26rem;
   }
 
-  .store__subtitle-button {
+  .store__container,
+  .gaming__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-inline: 2rem;
+  }
+
+
+  .store__subtitle-button,
+  .gaming__subtitle-button {
     display: block;
     margin-top: 2rem;
   }
 
-  .store_button-styles {
-    width: 95%;
+  .store_button-styles,
+  .gaming_button-styles {
+    width: 100%;
   }
-
 
 }
 
@@ -815,8 +841,6 @@ html {
     padding-top: 3rem;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
-
-
   }
 
   .img-2 {
@@ -840,14 +864,12 @@ html {
 
   }
 
-
   .text-banner-principal {
     color: var(--tex1);
   }
 
   .background-banner-description {
     display: none;
-
   }
 
   .text-buttom-banner-principal {
@@ -880,8 +902,6 @@ html {
     font-size: 1.9rem;
     padding-inline-start: 0.5rem;
     padding-bottom: 2rem;
-
-
   }
 
   .img-2 {
@@ -901,9 +921,7 @@ html {
   .text-button-featured {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
-
   }
 
   .text-featured {
@@ -919,18 +937,26 @@ html {
     text-align: center;
     border-width: 1rem;
     border-color: var(--primary-color);
-
   }
 
   .buttom__featured:hover {
     cursor: pointer;
     background-color: rgb(172, 0, 13);
     border-color: rgb(172, 0, 13);
-
   }
 
   .rating__featured__container {
     width: 33%;
   }
 
+}
+
+@media screen and (max-width: 1110px) {
+
+  .store__container,
+  .gaming__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-inline: 2rem;
+  }
 }
